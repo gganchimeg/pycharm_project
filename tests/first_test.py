@@ -69,6 +69,7 @@ if __name__ == '__main__':
   login_button.click()
 
   # profile selection
+  
 
   profile1 = driver.find_element(by=AppiumBy.ID, value='net.giitd.looktv.main:id/image_profile')
   profile1.click()
