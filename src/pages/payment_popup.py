@@ -1,9 +1,7 @@
-from cProfile import Profile
-from src.pages.profile_selection import ProfileSelectorPage
-from src.pages.registration_page import BaseRegistrationPage
-from src.pages.forgot_password_page import ForgotPasswordPage
+
 from seleniumpagefactory.Pagefactory import PageFactory
 from utilities.readProperties import ReadConfig
+from src.pages.payment_options import PaymentOptionsPage
 
 class PaymentPage(PageFactory):
     def __init__(self, driver):
@@ -15,9 +13,5 @@ class PaymentPage(PageFactory):
     }
 
     def clickRentButton(self):
-        self.submit_button.click()
-        return ProfileSelectorPage(self.driver)
-
-    def clickCloseButton(self):
-        self.register_button.click()
-        return BaseRegistrationPage(self.driver)
+        self.rent_button.click()
+        return PaymentOptionsPage(self.driver)

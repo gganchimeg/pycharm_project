@@ -1,8 +1,10 @@
 from cProfile import Profile
 from src.pages.profile_selection import ProfileSelectorPage
-from src.pages.registration_page import BaseRegistrationPage
+# from src.pages.registration_page import BaseRegistrationPage
 from src.pages.forgot_password_page import ForgotPasswordPage
 from seleniumpagefactory.Pagefactory import PageFactory
+
+from src.pages.registration_page_phone import PhoneRegistrationPage
 from utilities.readProperties import ReadConfig
 
 class LoginPage(PageFactory):
@@ -33,7 +35,8 @@ class LoginPage(PageFactory):
 
     def clickRegisterButton(self):
         self.register_button.click()
-        return BaseRegistrationPage(self.driver)
+        return PhoneRegistrationPage(self.driver)
+    #     eniiig garaas avaad goy hiiine odoohondoo hardcode hiiy
 
     def clickForgotPassword(self):
         self.forgot_password.click()

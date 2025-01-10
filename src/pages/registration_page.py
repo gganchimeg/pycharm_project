@@ -1,4 +1,6 @@
 from seleniumpagefactory.Pagefactory import PageFactory
+from src.pages.registration_phone_otp_input_page import RegistrationPhoneOTPInput
+from src.pages.registration_email_sent_page import RegistrationEmailVerificationPage
 
 class BaseRegistrationPage(PageFactory):
     def __init__(self, driver):
@@ -42,43 +44,5 @@ class BaseRegistrationPage(PageFactory):
 
     def closeWindow(self):
         self.close.click()
-
-class EmailRegistrationConfirmationPage(PageFactory):
-    def __init__(self, driver):
-        self.driver = driver
-
-    locators = {
-        'confirm_button': ('XPATH', "(//li[@class='button-vertical-container horizontal-center popup-button-vertical-item small-font wrap cursor-pointer rounded-input-40 ng-scope no-bg basic-border button-bg-color popup-button-vertical-item-bg'])[1]"),
-        'back_button': ('XPATH', "//div[@class='tv-icon icon-up-arrow back-arrow back-login-button cursor-pointer ng-scope']"),
-        'send_again': ('XPATH', "//span[@class='highlightMessage medium-font-type register-link ng-scope']")
-    }
-
-    def clickConfirmButton(self):
-        self.confirm_button.click()
-    def clickBack(self):
-        self.back_button.click()
-    def clickSendAgain(self):
-        self.send_again.click()
-
-class PhoneRegistrationOTPPage(PageFactory):
-    def __init__(self, driver):
-        self.driver = driver
-
-    locators = {
-        'email_input': ('XPATH', "//input[@id='email']"),
-        'pass_input': ('XPATH', "//input[@id='password']"),
-        'pass_input_duplicate': ('XPATH', "//input[@id='confirm-password']"),
-        'close': ('XPATH', "//div[@class='tv-icon icon-exit close-login-button cursor-pointer ng-scope']")
-    }
-
-    def setEmail(self, email):
-        self.email_input.set_text(email)
-
-    def setPhone(self, phone):
-        self.email_input.set_text(phone)
-
-    def setPassword(self, password):
-        self.pass_input.set_text(password)
-
 
 

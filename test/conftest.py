@@ -5,7 +5,7 @@ from seleniumwire import webdriver
 
 @pytest.fixture()
 def setup():
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     return driver
 # @pytest.fixture(params=["Edge", "Chrome", "Firefox"])
 # def setup(browser):

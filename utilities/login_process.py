@@ -2,7 +2,6 @@ import pytest
 from src.pages.login_page import LoginPage
 from utilities.readProperties import ReadConfig
 
-
 @pytest.mark.first
 def login_process(driver):
     baseURL = ReadConfig.getApplicationURL()
@@ -19,17 +18,16 @@ def login_process(driver):
     return profileSelectorPage
 
 @pytest.mark.second
-def profile_selection_process(driver, profileSelectionPage):
-    # self.driver.maximize_window()
-    driver.implicitly_wait(10)  # once
-
-    profileSelectionPage.
+def profile_selection_process(profileSelectorPage):
+    homePage = profileSelectorPage.select_first_profile()
+    return homePage
 
 
-
-    return homepage
-
-
-
-    time.sleep(10)
-    self.driver.quit()
+    # # self.driver.maximize_window()
+    # driver.implicitly_wait(10)  # once
+    #
+    # profileSelectionPage.
+    # return homepage
+    #
+    # time.sleep(10)
+    # self.driver.quit()

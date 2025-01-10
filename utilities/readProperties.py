@@ -20,8 +20,17 @@ class ReadConfig():
         password=(config.get('commonInfo', 'password'))
         return password
 
+    @staticmethod
+    def getPurchasePin():
+        purchasePin = (config.get('pinInfo', 'purchasePin'))
+        return purchasePin
 
-#Testing above methods - optional Code
+    @staticmethod
+    def getParentalPin():
+        parentalPin = (config.get('pinInfo', 'parentalPin'))
+        return parentalPin
+
+#Testing above methods
 #print(ReadConfig.getApplicationURL())
 #print(ReadConfig.getUseremail())
 

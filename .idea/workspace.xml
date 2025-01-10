@@ -4,29 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba25ffcd-f85d-472f-8c55-175d1c49c403" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/configurations/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/forgot_password_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homepage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/payment_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/payment_popup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile_selection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test001_LoginByEmail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test001_RegistrationByEmail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test001_RegistrationByPhone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/delete_registered_terminals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/web_selenium/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/customLogger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/login_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/readProperties.py" afterDir="false" />
+    <list default="true" id="ba25ffcd-f85d-472f-8c55-175d1c49c403" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/pages/contentInfoPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/navigation_box.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/navigation_epg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/navigation_home.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/navigation_tv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/payment_fourdigit_popup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registration_email_sent_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registration_page_phone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registration_phone_otp_input_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registration_successful_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/search_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/settings_acc_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/settings_devices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/settings_favorite_channels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/settings_languages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/settings_logout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/settings_profile_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/settings_subscription.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test001_purchaseFromBOX.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/homepage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_popup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile_selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test001_LoginByEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test001_LoginByEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test001_RegistrationByPhone.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test001_RegistrationByPhone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/delete_registered_terminals.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/delete_registered_terminals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/login_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/login_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/readProperties.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/readProperties.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +54,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/gganchimeg/pycharm_project.git",
-    "accountId": "746bb49d-366e-4c34-96d2-709bba6e9e90"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;gganchimeg&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;gganchimeg&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gganchimeg/pycharm_project.git&quot;,
+    &quot;accountId&quot;: &quot;746bb49d-366e-4c34-96d2-709bba6e9e90&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -187,6 +208,15 @@
       <option name="presentableId" value="Default" />
       <updated>1729672992789</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1734079230232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734079230232</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +230,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -207,11 +241,6 @@
           <url>file://$PROJECT_DIR$/tests/first_test.py</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/pages/registration_page.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test/test2.py</url>

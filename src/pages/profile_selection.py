@@ -1,4 +1,5 @@
 from seleniumpagefactory.Pagefactory import PageFactory
+from src.pages.navigation_home import HomePage
 
 class ProfileSelectorPage(PageFactory):
     def __init__(self, driver):
@@ -11,13 +12,14 @@ class ProfileSelectorPage(PageFactory):
         'profile4': ('XPATH', "//body[1]/div[2]/div[4]/linear-list[1]/ul[1]/ng-include[1]/li[4]/div[1]/img[1]"),
         'profile5': ('XPATH', "//body[1]/div[2]/div[4]/linear-list[1]/ul[1]/ng-include[1]/li[5]/div[1]/img[1]"),
         # .......?????????not visible in ui add box
-        'profile_add': ('XPATH', "//span[@class='light-font-type profile-item-add-plus-text profile-add-text ng-scope']")
+        'profile_add': ('XPATH', "//span[@class='light-font-type profile-item-add-plus-text profile-add-text ng-scope']"),
         'check_profile': ('XPATH', "//div[@class='profile-image profile-image-add']"),
         'check_add_button': ('XPATH', "//div[@class='profile-image']")
     }
 
     def select_first_profile(self):
         self.profile1.click()
+        return HomePage(self.driver)
 
     def select_second_profile(self):
         self.profile2.click()
