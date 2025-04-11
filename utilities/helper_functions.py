@@ -21,8 +21,6 @@ def login_process(driver):
 def profile_selection_process(profileSelectorPage):
     homePage = profileSelectorPage.select_first_profile()
     return homePage
-
-
     # # self.driver.maximize_window()
     # driver.implicitly_wait(10)  # once
     #
@@ -31,3 +29,8 @@ def profile_selection_process(profileSelectorPage):
     #
     # time.sleep(10)
     # self.driver.quit()
+
+def getOTP():
+    otp = input("Enter the OTP: ")
+    otp_list = [int(i) for i in str(otp)]
+    return otp_list

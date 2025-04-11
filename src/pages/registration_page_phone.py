@@ -10,7 +10,7 @@ class EmailRegistrationPage(BaseRegistrationPage, PageFactory):
         super().__init__(self.driver)
 
     def clickSubmitButton(self):
-        super().register_confirm_button.click()
+        super().clickSubmitButton()
         return RegistrationEmailVerificationPage(self.driver)
 
 

@@ -6,35 +6,26 @@ import time
 import json
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
-from utilities.login_process import login_process
-from utilities.login_process import profile_selection_process
+from utilities.helper_functions import login_process
+from utilities.helper_functions import profile_selection_process
 
-# for now it's just a script to test flows
-
-class Test:
+class TestChangePassword:
     baseURL = ReadConfig.getApplicationURL()
     # logger = LogGen.loggen() # for log
 
-    def test(self, setup):
-
-        # variables for just initial testing
-        # will remove it later ----------------------------------------------
-        purchasePin = ReadConfig.getPurchasePin()
+    def test_change_password(self, setup):
+        oldPass = ReadConfig.getPassword()
+        newPass = ReadConfig.getPassword1()
 
         # -------------------------------------------------------------------
-        # self.logger.info("/* test001_LoginByEmail started */")
         self.driver = setup  # setup dotroo browseroo zarlaad driver uusgesen
         self.driver.get(self.baseURL)
         # self.driver.maximize_window()
         self.driver.implicitly_wait(10)  # once
-
         # --------------------- general login process ---------------------
         response = login_process(self.driver)
         homePage = profile_selection_process(response)
         # --------------------- end -----------------
-
-
-
 
         # ---------  old code below
         boxPage = homePage.clickNavigationBox()

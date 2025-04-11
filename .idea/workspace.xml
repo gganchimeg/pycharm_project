@@ -5,38 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba25ffcd-f85d-472f-8c55-175d1c49c403" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/pages/contentInfoPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigation_box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigation_epg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigation_home.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navigation_tv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/payment_fourdigit_popup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration_email_sent_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration_page_phone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration_phone_otp_input_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration_successful_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/search_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/settings_acc_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/settings_devices.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/settings_favorite_channels.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/settings_languages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/settings_logout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/settings_profile_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/settings_subscription.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test001_purchaseFromBOX.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_001_ChangePassword.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_001_LoginByEmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_001_RegistrationByEmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_data_handle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurations/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homepage.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/payment_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/payment_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_popup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile_selection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration_page_phone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_page_phone.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test001_LoginByEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test001_LoginByEmail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test001_RegistrationByPhone.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test001_RegistrationByPhone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/delete_registered_terminals.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/delete_registered_terminals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/login_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/login_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test001_LoginByEmail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test001_RegistrationByEmail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test001_RegistrationByPhone.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_001_RegistrationByPhone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test001_purchaseFromBOX.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_001_purchaseFromBOX.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ptest2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/login_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/helper_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/readProperties.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/readProperties.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,11 +74,13 @@
     &quot;Python.test1.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ganchimeg.g/Local/PycharmProjects/pycharm_project&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\tests" />
       <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project" />
     </key>
   </component>
@@ -167,7 +152,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in ptest2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pycharm_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,17 +163,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test2.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/ptest2.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test1" />
         <item itemvalue="Python tests.Python tests in delete_registered_terminals.py" />
         <item itemvalue="Python tests.Python tests for network.test_network_capture" />
-        <item itemvalue="Python tests.Python tests in test2.py" />
+        <item itemvalue="Python tests.Python tests in ptest2.py" />
         <item itemvalue="Python tests.Python tests in C:/Users/ganchimeg.g/Local/PycharmProjects/pycharm_project/test/test1.py" />
-        <item itemvalue="Python.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734079230232</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <option name="closed" value="true" />
+      <created>1736499710323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736499710323</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +236,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test2.py</url>
+          <url>file://$PROJECT_DIR$/tests/ptest2.py</url>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

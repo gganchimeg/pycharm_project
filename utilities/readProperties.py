@@ -7,28 +7,54 @@ config.read("C:/Users/ganchimeg.g/Local/PycharmProjects/pycharm_project/configur
 class ReadConfig():
     @staticmethod
     def getApplicationURL():
-        url=(config.get('commonInfo', 'baseURL'))
+        url = (config.get('commonInfo', 'baseURL'))
         return url
 
     @staticmethod
     def getUseremail():
-        username=(config.get('commonInfo', 'email'))
+        username = (config.get('commonInfo', 'email'))
         return username
 
     @staticmethod
     def getPassword():
-        password=(config.get('commonInfo', 'password'))
-        return password
+        p = (config.get('commonInfo', 'password'))
+        return p
+
+    @staticmethod
+    def getPassword1():
+        p = (config.get('commonInfo', 'password1'))
+        return p
+
+    @staticmethod
+    def setPassword(p):
+        config.set("commonInfo", "password", p)
+        return
 
     @staticmethod
     def getPurchasePin():
-        purchasePin = (config.get('pinInfo', 'purchasePin'))
-        return purchasePin
+        pin = (config.get('pinInfo', 'purchasePin'))
+        return pin
 
     @staticmethod
     def getParentalPin():
-        parentalPin = (config.get('pinInfo', 'parentalPin'))
-        return parentalPin
+        pin = (config.get('pinInfo', 'parentalPin'))
+        return pin
+
+    # ------------ register
+    @staticmethod
+    def getRegistrationPhone():
+        p = (config.get('registerInfo', 'phone'))
+        return p
+
+    @staticmethod
+    def getRegistrationEmail():
+        e = (config.get('registerInfo', 'email'))
+        return e
+
+    @staticmethod
+    def getRegistrationPassword():
+        p = (config.get('registerInfo', 'password'))
+        return p
 
 #Testing above methods
 #print(ReadConfig.getApplicationURL())
