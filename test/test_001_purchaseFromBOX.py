@@ -1,21 +1,24 @@
-import pytest
-from src.pages.login_page import LoginPage
+
 from src.pages.payment_fourdigit_popup import PaymentPurchasePinInputPage
-from utilities.network_response import save_network_log
 import time
-import json
+
+from src.pages.payment_unitel0_phone_input_popup import PaymentUnitel0PhoneNumberInputPage
 from utilities.readProperties import ReadConfig
-from utilities.customLogger import LogGen
-from utilities.helper_functions import login_process
+from utilities.helper_functions import login_process, getOTP
 from utilities.helper_functions import profile_selection_process
 
-# for now it's just a script to test flows
+#
 
 class Test:
     baseURL = ReadConfig.getApplicationURL()
     # logger = LogGen.loggen() # for log
 
-    def test(self, setup):
+    def purchaseBOXcontent(self, setup):
+        '''
+        completed
+        :param setup:
+        :return:
+        '''
 
         # variables for just initial testing
         # will remove it later ----------------------------------------------
@@ -29,37 +32,54 @@ class Test:
         self.driver.implicitly_wait(10)  # once
 
         # --------------------- general login process ---------------------
-        response = login_process(self.driver)
-        homePage = profile_selection_process(response)
+        profileSelectorPage = login_process(self.driver)
+        homePage = profile_selection_process(profileSelectorPage)
         # --------------------- end -----------------
 
-
-
-
         # ---------  old code below
-        boxPage = homePage.clickNavigationBox()
+        boxPage = homePage.click_navigation_box()
         contentInfoPage = boxPage.clickCrazyRich()
         time.sleep(2)
         paymentPopup = contentInfoPage.clickRentButton()
         paymentOptions = paymentPopup.clickRentButton()
         paymentOptions.clickDefaultPayment()
+        unitel0_popup = PaymentUnitel0PhoneNumberInputPage(self.driver)
+        # default payment ni unitel-0 baih yum bol dugaar insert hiideg popup class init hiih hereg garch baina
+        # odoohondoo shuud hardcode hiilee
+        unitel0_popup.setPhoneNumber("86118529")
+        verif_otp_popup = unitel0_popup.clickOkButton()
 
-        # START entering the ppurchase pin ----------------------------------------------------
-        popupPage = PaymentPurchasePinInputPage(self.driver)
-        time.sleep(1)
-        popupPage.setDigitOne()
-        # time.sleep(1)
-        popupPage.setDigitTwo()
-        # time.sleep(1)
-        popupPage.setDigitThree()
-        # time.sleep(1)
-        popupPage.setDigitFour()
-        # time.sleep(2)
-        popupPage.clickSubmitButton()
-        # END entering the ppurchase pin ----------------------------------------------------
+        # otp gee garaas avahnee
+        verif_otp = getOTP()
+        verif_otp = ''.join(map(str, verif_otp))
+        # Unitel-0 uchraas end dugaar oruuldag line nemlee
+        verif_otp_popup.setVerifCode(verif_otp)
+        successful = verif_otp_popup.clickOkButton()
+
+        successful.clickOkButton()
 
 
-        time.sleep(10)
+
+
+
+        #
+        # # START entering the purchase pin ----------------------------------------------------
+        # popupPage = PaymentPurchasePinInputPage(self.driver)
+        # time.sleep(1)
+        # popupPage.setDigitOne()
+        # # time.sleep(1)
+        # popupPage.setDigitTwo()
+        # # time.sleep(1)
+        # popupPage.setDigitThree()
+        # # time.sleep(1)
+        # popupPage.setDigitFour()
+        # # time.sleep(2)
+        # popupPage.clickSubmitButton()
+        # # END entering the ppurchase pin ----------------------------------------------------
+
+        print("sleeping\n")
+        time.sleep(5)
+
         self.driver.quit()
 
 

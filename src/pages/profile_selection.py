@@ -1,5 +1,5 @@
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.navigation_home import HomePage
+from src.pages.home_page import HomePage
 
 class ProfileSelectorPage(PageFactory):
     def __init__(self, driver):

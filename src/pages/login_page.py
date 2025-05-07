@@ -1,8 +1,7 @@
-from cProfile import Profile
 from src.pages.profile_selection import ProfileSelectorPage
-from src.pages.forgot_password_page import ForgotPasswordPage
+from src.pages.reset_password_page import ResetPasswordPage
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.registration_page_phone import PhoneRegistrationPage
+from src.pages.registration_page import BaseRegistrationPage
 
 class LoginPage(PageFactory):
     def __init__(self, driver):
@@ -17,27 +16,27 @@ class LoginPage(PageFactory):
     'pass_show': ('XPATH', "//div[@class='login-icon vertical-center tv-icon medium-font login-eye-icon primary-font-color cursor-pointer icon-eye-on']")
     }
 
-    def setEmail(self, email):
+    def set_email(self, email):
         self.email_input.set_text(email + '\n')
 
-    def setPassword(self, password):
+    def set_password(self, password):
         self.pass_input.set_text(password + '\n')
 
-    def checkShowPassword(self):
+    def check_show_password(self):
         self.pass_show.click()
 
-    def clickSubmitButton(self):
+    def click_submit_button(self):
         self.submit_button.click()
         return ProfileSelectorPage(self.driver)
 
-    def clickRegisterButton(self):
+    def click_register_button(self):
         self.register_button.click()
-        return PhoneRegistrationPage(self.driver)
+        return BaseRegistrationPage(self.driver)
     #     eniiig garaas avaad goy hiiine odoohondoo hardcode hiiy
 
-    def clickForgotPassword(self):
+    def click_reset_password(self):
         self.forgot_password.click()
-        return ForgotPasswordPage(self.driver)
+        return ResetPasswordPage(self.driver)
 
 
 

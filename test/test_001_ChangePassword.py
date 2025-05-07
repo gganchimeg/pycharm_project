@@ -1,56 +1,41 @@
-import pytest
-from src.pages.login_page import LoginPage
 from src.pages.payment_fourdigit_popup import PaymentPurchasePinInputPage
-from utilities.network_response import save_network_log
 import time
-import json
 from utilities.readProperties import ReadConfig
-from utilities.customLogger import LogGen
-from utilities.helper_functions import login_process
+from utilities.helper_functions import login_process, update_config_value
 from utilities.helper_functions import profile_selection_process
 
 class TestChangePassword:
     baseURL = ReadConfig.getApplicationURL()
     # logger = LogGen.loggen() # for log
+    username = ReadConfig.getUsernameForLogin()
+    current_password = ReadConfig.getPassword()
+    new_password = ReadConfig.getUpdatePassword()
 
     def test_change_password(self, setup):
-        oldPass = ReadConfig.getPassword()
-        newPass = ReadConfig.getPassword1()
-
-        # -------------------------------------------------------------------
         self.driver = setup  # setup dotroo browseroo zarlaad driver uusgesen
         self.driver.get(self.baseURL)
         # self.driver.maximize_window()
         self.driver.implicitly_wait(10)  # once
         # --------------------- general login process ---------------------
-        response = login_process(self.driver)
-        homePage = profile_selection_process(response)
-        # --------------------- end -----------------
+        profile_selector_page = login_process(self.driver, usern= self.username, passw=self.current_password)
+        home_page = profile_selection_process(profile_selector_page)
 
-        # ---------  old code below
-        boxPage = homePage.clickNavigationBox()
-        contentInfoPage = boxPage.clickCrazyRich()
-        time.sleep(2)
-        paymentPopup = contentInfoPage.clickRentButton()
-        paymentOptions = paymentPopup.clickRentButton()
-        paymentOptions.clickDefaultPayment()
+        profile_config_page = home_page.click_navigation_settings()
+        account_config_page = profile_config_page.click_acc_conf()
+        enter_new_password_popup = account_config_page.click_change_password()
+        # fill out section
+        enter_new_password_popup.set_current_password(self.current_password)
+        enter_new_password_popup.set_new_password(self.new_password)
+        enter_new_password_popup.set_new_password_duplicate(self.new_password)
+        enter_new_password_popup.check_show_password()
+        success_page = enter_new_password_popup.click_continue_fromsettings()
+        success_page.click_ok_button()
 
-        # START entering the ppurchase pin ----------------------------------------------------
-        popupPage = PaymentPurchasePinInputPage(self.driver)
-        time.sleep(1)
-        popupPage.setDigitOne()
-        # time.sleep(1)
-        popupPage.setDigitTwo()
-        # time.sleep(1)
-        popupPage.setDigitThree()
-        # time.sleep(1)
-        popupPage.setDigitFour()
-        # time.sleep(2)
-        popupPage.clickSubmitButton()
-        # END entering the ppurchase pin ----------------------------------------------------
+        print('done')
 
+        update_config_value(sec="commonInfo", opt="password", v=self.new_password)
+        update_config_value(sec="updateInfo", opt="password", v=self.current_password)
 
-        time.sleep(10)
         self.driver.quit()
 
 

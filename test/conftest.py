@@ -7,6 +7,23 @@ from seleniumwire import webdriver
 def setup():
     driver = webdriver.Chrome()
     return driver
+
+def pytest_collection_modifyitems(items):
+    # Define the desired order of test files
+    file_order = [
+        "test_001_RegistrationByEmail.py",
+        "test_001_LoginByEmail.py",
+        "test_001_purchaseFromBOX.py"
+    ]
+
+    # Create a dictionary mapping filenames to their position in the desired order
+    file_order_dict = {filename: i for i, filename in enumerate(file_order)}
+
+    # Sort the test items based on their file order
+    items.sort(key=lambda item: file_order_dict.get(item.module.__file__.split("/")[-1], float('inf')))
+
+
+
 # @pytest.fixture(params=["Edge", "Chrome", "Firefox"])
 # def setup(browser):
 #     if browser == "Edge":

@@ -6,9 +6,10 @@ class BoxPage(PageFactory):
         self.driver = driver
 
     locators = {
-        'test_crazyrich': ('XPATH', "//body[1]/div[2]/div[1]/div[2]/div[1]/react-component[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[6]")
+        'test_crazyrich': ('XPATH', "//body[1]/div[2]/div[1]/div[2]/div[1]/react-component[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[6]"),
+        'test1': ("XPATH", "//body//div[@id='mosaic']//div[contains(@class,'main-list-with-info')]//div//div//div[1]//div[2]//div[2]//div[5]")
     }
 
     def clickCrazyRich(self):
-        self.test_crazyrich.click()
+        self.test1.click()
         return ContentInfoPage(self.driver)
