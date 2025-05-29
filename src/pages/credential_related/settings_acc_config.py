@@ -1,6 +1,7 @@
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.change_email_input_confirmation import ChangeEmailInput
-from src.pages.new_password_input_popup import TestNewpasswordInputPage
+from src.pages.credential_related.change_email_input_confirmation import ChangeEmailInput
+from src.pages.credential_related.change_password_newpassword_input_popup import ChangePasswordNewpasswordInputPage
+from src.pages.credential_related.new_phone_input_popup import NewPhoneInputPage
 
 
 class SettingsAccConfigPage(PageFactory):
@@ -20,6 +21,12 @@ class SettingsAccConfigPage(PageFactory):
 
     def click_change_password(self):
         self.change_password.click()
-        return TestNewpasswordInputPage(self.driver)
+        return ChangePasswordNewpasswordInputPage(self.driver)
+
+    def click_change_phone(self):
+        self.change_phone.click()
+        return NewPhoneInputPage(self.driver)
+
+
 
 

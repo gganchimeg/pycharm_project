@@ -1,10 +1,9 @@
-from datetime import datetime
 import time
-from src.pages.registration_page_child import PhoneRegistrationPage
+from src.pages.credential_related.registration_page_child import PhoneRegistrationPage
 from src.pages.login_page import LoginPage
 from utilities.readProperties import ReadConfig
-from test.otp_extraction import otp_extraction
-from utilities.helper_functions import getOTP
+from utilities.helper_functions import string_to_list, otp_extraction
+
 
 class TestRegistrationByPhone:
     baseURL = ReadConfig.getApplicationURL()
@@ -35,7 +34,7 @@ class TestRegistrationByPhone:
 
         # ene heseg deer adb geer message ruuu handalt hiij OTP gee avna
         code = otp_extraction()
-        otp_list = getOTP(code)
+        otp_list = string_to_list(code)
         # otp fill in
         otpInputPage.set_digit_one(otp_list[0])
         otpInputPage.set_digit_two(otp_list[1])
@@ -46,7 +45,7 @@ class TestRegistrationByPhone:
 
         reg_successful_page = otpInputPage.click_submit_button()
         time.sleep(10)
-        reg_successful_page.clickLoginButton()
+        reg_successful_page.click_login_button()
 
         print("\ndone")
 

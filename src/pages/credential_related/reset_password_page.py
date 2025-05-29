@@ -1,6 +1,4 @@
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.reset_password_phone_otp_input_page import ResetPasswordPhoneOTPInput
-
 
 class ResetPasswordPage(PageFactory):
     def __init__(self, driver):
@@ -16,8 +14,7 @@ class ResetPasswordPage(PageFactory):
         self.email_input.set_text(p)
 
     def click_reset_button(self):
-        self.reset_password_button.click()
-        return ResetPasswordPhoneOTPInput(self.driver)
+        pass
 
     def click_cancel_button(self):
         self.cancel_button.click()

@@ -4,7 +4,7 @@ import time
 
 from src.pages.payment_unitel0_phone_input_popup import PaymentUnitel0PhoneNumberInputPage
 from utilities.readProperties import ReadConfig
-from utilities.helper_functions import login_process, getOTP
+from utilities.helper_functions import login_process, string_to_list
 from utilities.helper_functions import profile_selection_process
 
 #
@@ -42,7 +42,7 @@ class Test:
         time.sleep(2)
         paymentPopup = contentInfoPage.clickRentButton()
         paymentOptions = paymentPopup.clickRentButton()
-        paymentOptions.clickDefaultPayment()
+        paymentOptions.click_default_payment()
         unitel0_popup = PaymentUnitel0PhoneNumberInputPage(self.driver)
         # default payment ni unitel-0 baih yum bol dugaar insert hiideg popup class init hiih hereg garch baina
         # odoohondoo shuud hardcode hiilee
@@ -50,13 +50,13 @@ class Test:
         verif_otp_popup = unitel0_popup.clickOkButton()
 
         # otp gee garaas avahnee
-        verif_otp = getOTP()
+        verif_otp = string_to_list()
         verif_otp = ''.join(map(str, verif_otp))
         # Unitel-0 uchraas end dugaar oruuldag line nemlee
         verif_otp_popup.setVerifCode(verif_otp)
-        successful = verif_otp_popup.clickOkButton()
+        successful = verif_otp_popup.click_ok_button()
 
-        successful.clickOkButton()
+        successful.click_ok_button()
 
 
 

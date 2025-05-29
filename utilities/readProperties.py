@@ -13,7 +13,7 @@ class ReadConfig():
     @staticmethod
     def getUsernameForLogin():
         email = (config.get('commonInfo', 'email'))
-        phone = (config.get('commonInfo', 'phone_number'))
+        phone = (config.get('commonInfo', 'phone'))
 
         if email is None and phone is None:
             raise ValueError("Both email and phone are None")
@@ -29,7 +29,7 @@ class ReadConfig():
 
     @staticmethod
     def getPhoneNumber():
-        p = (config.get('commonInfo', 'phone_number'))
+        p = (config.get('commonInfo', 'phone'))
         return p
 
     @staticmethod
@@ -54,17 +54,17 @@ class ReadConfig():
 
     @staticmethod
     def getPurchasePin():
-        pin = (config.get('pinInfo', 'purchasePin'))
+        pin = (config.get('pinInfo', 'purchasepin'))
         return pin
 
     @staticmethod
     def getParentalPin():
-        pin = (config.get('pinInfo', 'parentalPin'))
+        pin = (config.get('pinInfo', 'parentalpin'))
         return pin
 
     @staticmethod
     def getProfilePin():
-        pin = (config.get('pinInfo', 'profilePin'))
+        pin = (config.get('pinInfo', 'profilepin'))
         return pin
 
     # ------------ register
@@ -87,7 +87,13 @@ class ReadConfig():
     def getUpdatePassword():
         np = (config.get('updateInfo', 'password'))
         return np
-#Testing above methods
-#print(ReadConfig.getApplicationURL())
-#print(ReadConfig.getUseremail())
 
+    @staticmethod
+    def getUpdateEmail():
+        ne = (config.get('updateInfo', 'email'))
+        return ne
+
+    @staticmethod
+    def getUpdatePhoneNumber():
+        nn = (config.get('updateInfo', 'phone'))
+        return nn

@@ -1,7 +1,7 @@
 from src.pages.profile_selection import ProfileSelectorPage
-from src.pages.reset_password_page import ResetPasswordPage
+from src.pages.credential_related.reset_password_page import ResetPasswordPage
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.registration_page import BaseRegistrationPage
+from src.pages.credential_related.registration_page import BaseRegistrationPage
 
 class LoginPage(PageFactory):
     def __init__(self, driver):
@@ -17,10 +17,10 @@ class LoginPage(PageFactory):
     }
 
     def set_email(self, email):
-        self.email_input.set_text(email + '\n')
+        self.email_input.set_text(email)
 
     def set_password(self, password):
-        self.pass_input.set_text(password + '\n')
+        self.pass_input.set_text(password)
 
     def check_show_password(self):
         self.pass_show.click()

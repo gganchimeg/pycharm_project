@@ -9,11 +9,12 @@ class PurchaseSuccessfulPage(PageFactory):
         'close_button': ('XPATH', "//div[contains(@ng-click,'closePopUp()')]")
     }
 
-    def clickOkButton(self):
+    def click_ok_button(self):
         self.ok_button.click()
 
-    def clickCloseButton(self):
+    def click_close_button(self):
         self.close_button.click()
+
 
 
 

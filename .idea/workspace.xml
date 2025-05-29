@@ -5,44 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba25ffcd-f85d-472f-8c55-175d1c49c403" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/pages/change_password_successful_message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/looktvmn_ui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/new_password_input_popup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/payment_successful_popup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/payment_unitel0_phone_input_popup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/payment_unitel0_verification_code_popup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/reset_password_phone_otp_input_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/custom_ordered_runner_script.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/otp_extraction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_001_ChangeEmail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_001_ResetPasswordByPhone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/gmail_check_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/rightv_api/delete_household_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/rightv_api/remove_subscription_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/contentInfoPage_svod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/content_info_page_series.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/content_info_page_tvod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/ResetPasswordSuccessfulPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/change_email_input_confirmation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/change_email_sent_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/change_email_successful_message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/change_password_newpassword_input_popup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/change_password_successful_message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/email_sent_popup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/new_phone_input_popup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/registration_email_sent_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/registration_phone_otp_input_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/registration_successful_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/reset_password_by_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/reset_password_by_email_sent_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/reset_password_by_phone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/reset_password_new_password_input_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/reset_password_phone_otp_input_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/credential_related/update_phone_number_otp_input_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_001_profile_creation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_001_purchaseByUnitel1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_001_searchSVOD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_playback_related/test_001_playbackTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_user_credential_related/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_ResetPasswordByEmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_UpdateEmailAddress.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_UpdatePhoneNumber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pycharm_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/looktv_webapp_test_automation_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurations/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forgot_password_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reset_password_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/change_email_input_confirmation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/change_password_successful_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/credential_related/successful_message_popup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contentInfoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contentInfoPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/navigation_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/navigation_box.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/navigation_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/navigation_tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/navigation_tv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/new_password_input_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/credential_related/new_user_data_input_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment_fourdigit_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_fourdigit_popup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment_successful_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_successful_popup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment_unitel0_verification_code_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment_unitel0_verification_code_popup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile_selection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration_email_sent_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_email_sent_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration_page_phone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_page_child.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration_phone_otp_input_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_phone_otp_input_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration_successful_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration_successful_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings_acc_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings_acc_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration_email_sent_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/credential_related/registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration_page_child.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/credential_related/registration_page_child.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration_phone_otp_input_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration_successful_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reset_password_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/credential_related/reset_password_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reset_password_phone_otp_input_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/credential_related/six_digit_otp_input_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/search_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/settings_acc_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/credential_related/settings_acc_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/settings_profile_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings_profile_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/change_email_input_confirmation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_001_ChangePassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_001_ChangePassword.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_001_LoginByEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_001_LoginByEmail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_001_RegistrationByEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_001_RegistrationByEmail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_001_RegistrationByPhone.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_001_RegistrationByPhone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/otp_extraction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_001_ChangeEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_ChangeEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_001_ChangePassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_ChangePassword.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_001_LoginByEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_LoginByEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_001_RegistrationByEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_RegistrationByEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_001_RegistrationByPhone.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_RegistrationByPhone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_001_ResetPasswordByPhone.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_credential_related/test_001_ResetPasswordByPhone.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_001_purchaseFromBOX.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_001_purchaseFromBOX.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_data_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/first_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/first_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/page_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/page_source.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ptest2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ptest2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/gmail_check_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/gmail_check_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/helper_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/readProperties.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/readProperties.py" afterDir="false" />
     </list>
@@ -68,9 +99,7 @@
       &quot;assignee&quot;: &quot;gganchimeg&quot;
     }
   ],
-  &quot;lastFilter&quot;: {
-    &quot;assignee&quot;: &quot;gganchimeg&quot;
-  }
+  &quot;lastFilter&quot;: {}
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
@@ -82,7 +111,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2npbVw9AaPhfjiAV3Fh2TAQLfQY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -94,13 +125,16 @@
     &quot;Python tests.Python tests in test2.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_001_LoginByEmail.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_001_RegistrationByEmail.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_001_searchSVOD.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_api_response.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.api_test.executor&quot;: &quot;Run&quot;,
     &quot;Python.appium_android_test.executor&quot;: &quot;Run&quot;,
     &quot;Python.custom_ordered_runner_script.executor&quot;: &quot;Run&quot;,
     &quot;Python.delete_household_api.executor&quot;: &quot;Run&quot;,
     &quot;Python.first_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.home_page.executor&quot;: &quot;Run&quot;,
     &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.network_response.executor&quot;: &quot;Run&quot;,
     &quot;Python.quickstart.executor&quot;: &quot;Run&quot;,
     &quot;Python.sel_test.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
@@ -114,17 +148,19 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\test" />
+      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\utilities\rightv_api" />
+      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\test" />
+      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\src\pages\credential_related" />
+      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\test_user_credential_related" />
       <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\utilities" />
-      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\tests" />
-      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project" />
+      <recent name="C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\utilities\rightv_api" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test1">
     <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pycharm_project" />
+      <module name="looktv_webapp_test_automation_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,7 +182,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Python tests for network.test_network_capture" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pycharm_project" />
+      <module name="looktv_webapp_test_automation_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,7 +197,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Python tests in C:/Users/ganchimeg.g/Local/PycharmProjects/pycharm_project/test/test1.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pycharm_project" />
+      <module name="looktv_webapp_test_automation_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,7 +212,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Python tests in delete_registered_terminals.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pycharm_project" />
+      <module name="looktv_webapp_test_automation_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,7 +227,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Python tests in ptest2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pycharm_project" />
+      <module name="looktv_webapp_test_automation_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -255,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744360387267</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <option name="closed" value="true" />
+      <created>1746576560894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746576560894</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +323,10 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/ptest2.py</url>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/pages/credential_related/successful_message_popup.py</url>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -37,7 +37,8 @@ def main(address):
   # -------------------------------------------------------------------------------------------------------------------
   try:
     service = build("gmail", "v1", credentials=creds)
-    results = service.users().messages().list(userId="me", q="is:unread in:anywhere from:(info@looktv.mn) newer_than:1d", maxResults=1).execute()
+    results = service.users().messages().list(userId="me", q=" in:anywhere from:(info@looktv.mn) newer_than:1d", maxResults=1).execute()
+    print(results)
     if not results['resultSizeEstimate']:    #if there is no email for the filter
       print("No result found.")
       return None

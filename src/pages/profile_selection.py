@@ -11,6 +11,12 @@ class ProfileSelectorPage(PageFactory):
         'profile3': ('XPATH', "//body[1]/div[2]/div[4]/linear-list[1]/ul[1]/ng-include[1]/li[3]/div[1]/img[1]"),
         'profile4': ('XPATH', "//body[1]/div[2]/div[4]/linear-list[1]/ul[1]/ng-include[1]/li[4]/div[1]/img[1]"),
         'profile5': ('XPATH', "//body[1]/div[2]/div[4]/linear-list[1]/ul[1]/ng-include[1]/li[5]/div[1]/img[1]"),
+
+        'profile_1': ('XPATH', "(//li[contains(@class,'profile-item ng-scope profile-hovered')])[1]"),
+        'profile_2': ('XPATH', "(//li[contains(@class,'profile-item ng-scope profile-hovered')])[2]"),
+        'profile_3': ('XPATH', "(//li[contains(@class,'profile-item ng-scope profile-hovered')])[3]"),
+        'profile_4': ('XPATH', "(//li[contains(@class,'profile-item ng-scope profile-hovered')])[4]"),
+        'profile_5': ('XPATH', "(//li[contains(@class,'profile-item ng-scope profile-hovered')])[5]"),
         # .......?????????not visible in ui add box
         'profile_add': ('XPATH', "//span[@class='light-font-type profile-item-add-plus-text profile-add-text ng-scope']"),
         'check_profile': ('XPATH', "//div[@class='profile-image profile-image-add']"),

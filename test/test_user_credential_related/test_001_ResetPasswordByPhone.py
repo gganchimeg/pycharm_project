@@ -1,9 +1,9 @@
 import time
-from src.pages.reset_password_page import ResetPasswordPage
+from src.pages.credential_related.reset_password_page import ResetPasswordPage
 from src.pages.login_page import LoginPage
 from utilities.readProperties import ReadConfig
-from test.otp_extraction import otp_extraction
-from utilities.helper_functions import getOTP, update_config_value
+from utilities.helper_functions import string_to_list, update_config_value, otp_extraction
+
 
 class TestResetPasswordByPhone:
     baseURL = ReadConfig.getApplicationURL()
@@ -32,7 +32,7 @@ class TestResetPasswordByPhone:
         # ene heseg deer adb geer message ruuu handalt hiij OTP gee avna
         code = otp_extraction()
         print(code)
-        otp_list = getOTP(code)
+        otp_list = string_to_list(code)
         print("list: ", otp_list)
         print("otp extracted")
         # otp fill in

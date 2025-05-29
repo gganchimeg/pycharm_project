@@ -1,8 +1,5 @@
-
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.payment_fourdigit_popup import PaymentPurchasePinInputPage
 from src.pages.payment_successful_popup import PurchaseSuccessfulPage
-from utilities.readProperties import ReadConfig
 from src.pages.payment_options import PaymentOptionsPage
 
 class PaymentUnitel0VerifCodeInputPage(PageFactory):

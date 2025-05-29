@@ -1,6 +1,5 @@
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.navigation_box import BoxPage
-from src.pages.settings_acc_config import SettingsAccConfigPage
+from src.pages.credential_related.settings_acc_config import SettingsAccConfigPage
 
 
 class SettingsProfileConfigPage(PageFactory):

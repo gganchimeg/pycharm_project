@@ -1,9 +1,8 @@
-from src.pages.registration_page_child import EmailRegistrationPage
-from src.pages.registration_email_sent_page import RegistrationEmailVerificationPage
+from src.pages.credential_related.registration_page_child import EmailRegistrationPage
+from src.pages.credential_related.registration_email_sent_page import RegistrationEmailVerificationPage
 from src.pages.login_page import LoginPage
 from utilities.helper_functions import return_activation_link
 from utilities.readProperties import ReadConfig
-import time
 
 
 class TestRegistrationByEmail:

@@ -1,10 +1,3 @@
-from webbrowser import register
-from selenium import webdriver
-
-from src.pages.reset_password_page import ResetPasswordPage
-from src.pages.login_page import LoginPage
-
-import time
 import pytest
 
 # skipping ...........................................................................

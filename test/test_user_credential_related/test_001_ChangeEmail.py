@@ -1,7 +1,7 @@
 import pytest
 from src.pages.login_page import LoginPage
 from src.pages.payment_fourdigit_popup import PaymentPurchasePinInputPage
-from configparser import SafeConfigParser
+from configparser import RawConfigParser
 import time
 import json
 from utilities.readProperties import ReadConfig
@@ -10,7 +10,7 @@ from utilities.helper_functions import login_process
 from utilities.helper_functions import profile_selection_process
 
 class TestChangeEmail:
-    configSet = SafeConfigParser()
+    configSet = RawConfigParser()
     baseURL = ReadConfig.getApplicationURL()
     old_email = ReadConfig.getUseremail()
     new_email = ReadConfig.getUserNewemail()
@@ -35,7 +35,7 @@ class TestChangeEmail:
         time.sleep(2)
         paymentPopup = contentInfoPage.clickRentButton()
         paymentOptions = paymentPopup.clickRentButton()
-        paymentOptions.clickDefaultPayment()
+        paymentOptions.click_default_payment()
 
         # START entering the ppurchase pin ----------------------------------------------------
         popupPage = PaymentPurchasePinInputPage(self.driver)

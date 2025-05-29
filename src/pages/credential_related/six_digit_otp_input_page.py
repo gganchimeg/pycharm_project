@@ -1,11 +1,7 @@
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.registration_successful_page import RegistrationSuccessfulPage
-from typing_extensions import ParamSpec
-
-from src.pages.new_password_input_popup import TestNewpasswordInputPage
 
 
-class ResetPasswordPhoneOTPInput(PageFactory):
+class SixDigitOTPInput(PageFactory):
     def __init__(self, driver):
         self.driver = driver
 
@@ -39,19 +35,12 @@ class ResetPasswordPhoneOTPInput(PageFactory):
     def set_digit_six(self, digitsix):
         self.digit_six.set_text(digitsix)
 
-    def click_submit_button(self):
-        self.submit_button.click()
-        return TestNewpasswordInputPage(self.driver)
-
-    def click_back_button(self):
-        self.back_button.click()
-    #      endees back hiiihed registration page garch irn gehdee inputuud ni
-    #      already filled baih uchraas need to clear them first
-    #      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-    # also login_page ees shuud registration_phone_otp_input_page ruu shijine
-    #     return basereg(self.driver)   circular import
     def click_send_again_link(self):
         self.send_again_link.click()
 
+    def click_submit_button(self):
+        pass
+    
+    def click_back_button(self):
+        pass
 
