@@ -5,18 +5,17 @@ from utilities.helper_functions import login_process, string_to_list
 from utilities.helper_functions import profile_selection_process
 
 class TestPurchaseVODUnitel1:
-    baseURL = ReadConfig.getApplicationURL()
+    baseURL = ReadConfig.get_application_url()
     # logger = LogGen.loggen() # for log
-    purchase_pin = ReadConfig.getPurchasePin()
-    username = ReadConfig.getPhoneNumber()
-    password = ReadConfig.getPassword()
+    purchase_pin = ReadConfig.get_purchase_pin()
+    username = ReadConfig.get_phone_number()
+    password = ReadConfig.get_password()
 
     def test_purchase_vod_unitel1(self, setup):
-        '''
-        completed
+        """
         :param setup:
         :return:
-        '''
+        """
 
         # -------------------------------------------------------------------
         # self.logger.info("/* test001_LoginByEmail started */")
@@ -31,13 +30,13 @@ class TestPurchaseVODUnitel1:
         # --------------------- end -----------------
 
         box_page = home_page.click_navigation_box()
-        content_info_page = box_page.clickCrazyRich()
+        content_info_page = box_page.click_crazyrich()
         time.sleep(2)
-        payment_popup = content_info_page.clickRentButton()
-        payment_options = payment_popup.clickRentButton()
+        payment_popup = content_info_page.click_rent_button()
+        payment_options = payment_popup.click_rent_button()
         payment_options.click_other_options()
         time.sleep(1)
-        enter_otp_page = payment_options.click_unitel_payment()
+        payment_options.click_unitel_payment()
 
         # entering the purchase pin ----------------------------------------------------
         l = string_to_list(self.purchase_pin)

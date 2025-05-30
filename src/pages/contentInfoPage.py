@@ -1,10 +1,9 @@
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.payment_popup import PaymentPage
-# from abc import ABC, abstractmethod
 
 
 class ContentInfoPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

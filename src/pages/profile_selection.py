@@ -3,6 +3,7 @@ from src.pages.home_page import HomePage
 
 class ProfileSelectorPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

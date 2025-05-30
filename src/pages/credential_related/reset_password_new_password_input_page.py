@@ -14,7 +14,7 @@ class ResetPasswordNewpasswordInputPage(NewDataInputPage):
 
     def click_continue(self):
         self.continue_button.click()
-        return (self.driver)
+        return self.driver
 
     def click_close(self):
         self.close.click()

@@ -1,7 +1,4 @@
-from seleniumpagefactory.Pagefactory import PageFactory
-
 from src.pages.contentInfoPage import ContentInfoPage
-from src.pages.payment_popup import PaymentPage
 from src.pages.player import VideoPlayer
 
 
@@ -25,7 +22,7 @@ class ContentInfoPageSeries(ContentInfoPage):
     def click_rent(self):
         super().get_button_1().click()
 
-    def click_watchLater(self):
+    def click_watch_later(self):
         super().get_button_2().click()
 
     def click_season_1(self):

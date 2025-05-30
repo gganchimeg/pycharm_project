@@ -1,15 +1,15 @@
 import time
-from src.pages.payment_fourdigit_popup import PaymentPurchasePinInputPage
-from utilities.readProperties import ReadConfig
-from utilities.helper_functions import login_process, string_to_list
-from utilities.helper_functions import profile_selection_process
 from utilities.helper_functions import latesttest_response
+from utilities.helper_functions import login_process
+from utilities.helper_functions import profile_selection_process
+from utilities.readProperties import ReadConfig
+
 
 class TestSearchSVOD:
-    baseURL = ReadConfig.getApplicationURL()
+    baseURL = ReadConfig.get_application_url()
     # logger = LogGen.loggen() # for log
-    username = ReadConfig.getPhoneNumber()
-    password = ReadConfig.getPassword()
+    username = ReadConfig.get_phone_number()
+    password = ReadConfig.get_password()
     kononii_ner = "blade"
     def test_search_svod(self, setup):
 
@@ -30,7 +30,7 @@ class TestSearchSVOD:
 
         content_info_page = search_page.click_result_svod()    # haij bga kino ni SVOD uchir ene functiong duudna
         time.sleep(3)
-        content_info_page.click_watchLater()
+        content_info_page.click_watch_later()
         time.sleep(3)
         content_info_page.click_trailer()
 

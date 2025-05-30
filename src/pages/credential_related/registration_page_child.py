@@ -3,13 +3,13 @@ from src.pages.credential_related.registration_phone_otp_input_page import Regis
 
 class EmailRegistrationPage(BaseRegistrationPage):
 
-    def clickSubmitButton(self):
-        super().clickSubmitButton()
+    def click_submit_button(self):
+        super().click_submit_button()
         # return RegistrationEmailVerificationPage(self.driver)
 
 
 class PhoneRegistrationPage(BaseRegistrationPage):
 
-    def clickSubmitButton(self):
-        super().clickSubmitButton()
+    def click_submit_button(self):
+        super().click_submit_button()
         return RegistrationPhoneOTPInput(self.driver)

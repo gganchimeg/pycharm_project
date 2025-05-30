@@ -6,6 +6,7 @@ from src.pages.credential_related.new_phone_input_popup import NewPhoneInputPage
 
 class SettingsAccConfigPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

@@ -4,6 +4,7 @@ from src.pages.payment_options import PaymentOptionsPage
 
 class PaymentUnitel0VerifCodeInputPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {
@@ -13,17 +14,17 @@ class PaymentUnitel0VerifCodeInputPage(PageFactory):
     'resend': ('XPATH', "//span[contains(@class,'unitel-resend ng-scope')]")
     }
 
-    def setVerifCode(self, code):
+    def set_verif_code(self, code):
         self.input_box.set_text(code)
 
-    def clickOkButton(self):
+    def click_ok_button(self):
         self.ok_button.click()
         return PurchaseSuccessfulPage(self.driver)
 
-    def clickCloseButton(self):
+    def click_close_button(self):
         self.close_button.click()
         return PaymentOptionsPage(self.driver)
 
-    def clickResend(self):
+    def click_resend(self):
         self.resend.click()
 

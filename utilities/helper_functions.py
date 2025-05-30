@@ -1,32 +1,27 @@
 import subprocess
 from datetime import datetime, timedelta
-from telnetlib import EC
-
-import pytest, time, re
+import time, re
 import requests
 import configparser
-
-from selenium.common import TimeoutException
-from selenium.webdriver.support.wait import WebDriverWait
 
 from src.pages.login_page import LoginPage
 from utilities.readProperties import ReadConfig
 
 # @pytest.mark.first
 def login_process(driver, usern, passw):
-    baseURL = ReadConfig.getApplicationURL()
-    driver.get(baseURL)
-    loginPage = LoginPage(driver)
+    base_url = ReadConfig.get_application_url()
+    driver.get(base_url)
+    login_page = LoginPage(driver)
 
     # self.driver.maximize_window()
     driver.implicitly_wait(10)  # once
 
-    loginPage.set_email(usern)   # username fill
-    loginPage.set_password(passw) # password fill
-    # loginPage.checkShowPassword()   # by choice
+    login_page.set_email(usern)   # username fill
+    login_page.set_password(passw) # password fill
+    # login_page.checkShowPassword()   # by choice
     time.sleep(5)
 
-    profile_selector_page = loginPage.click_submit_button()     # login page end, switching to profile selection page
+    profile_selector_page = login_page.click_submit_button()     # login page end, switching to profile selection page
     print("clicked submit button")
     return profile_selector_page
 
@@ -43,8 +38,8 @@ def profile_selection_process(profile_selector_page):
     # self.driver.quit()
 
 def string_to_list(s):
-    list = [int(i) for i in str(s)]
-    return list
+    l = [int(i) for i in str(s)]
+    return l
 
 def extract_new_password_from_html_page(url):
     body = requests.get(url).text
@@ -57,7 +52,7 @@ def extract_new_password_from_html_page(url):
     if match:
         return match.group(1).strip()
     else:
-        return("No match found.")
+        return "No match found."
 
 def return_activation_link(email_address):
     # endeesee mailruugee nevtreed activation link deer dardag linkruuugee orno
@@ -73,10 +68,11 @@ def return_activation_link(email_address):
     prefix = r"C:\Users\ganchimeg.g\Local\PycharmProjects\pycharm_project\utilities"
     address = prefix + "\\" + address + ".json"
     print(address)
-    activation_link = None
-    while not activation_link:
-        activation_link = gmailapi(address)
+
+    activation_link = gmailapi(address)
+    if not activation_link:
         time.sleep(40)
+        activation_link = gmailapi(address)
     return activation_link
 
 def open_link(d, link):
@@ -90,8 +86,8 @@ def update_config_value(sec, opt, v):
     config.read("C:/Users/ganchimeg.g/Local/PycharmProjects/pycharm_project/configurations/config.ini")
     config.set(section=sec, option=opt, value=v)
 
-    with open("C:/Users/ganchimeg.g/Local/PycharmProjects/pycharm_project/configurations/config.ini", 'w') as configfile:
-        config.write(configfile)
+    with open("C:/Users/ganchimeg.g/Local/PycharmProjects/pycharm_project/configurations/config.ini", 'w') as cfile:
+        config.write(cfile)
 
 
 def otp_extraction():

@@ -3,6 +3,7 @@ from src.pages.contentInfoPage import ContentInfoPage
 
 class BoxPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {
@@ -10,6 +11,6 @@ class BoxPage(PageFactory):
         'test1': ("XPATH", "//body//div[@id='mosaic']//div[contains(@class,'main-list-with-info')]//div//div//div[1]//div[2]//div[2]//div[5]")
     }
 
-    def clickCrazyRich(self):
+    def click_crazyrich(self):
         self.test1.click()
         return ContentInfoPage(self.driver)

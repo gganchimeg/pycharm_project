@@ -5,6 +5,7 @@ from src.pages.player import VideoPlayer
 
 class TvPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

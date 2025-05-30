@@ -1,6 +1,6 @@
 import requests
 
-def remove_service_plan_subscription(household_id, service_plan_id, api_url=None):
+def remove_service_plan_subscription(hh_id, sp_id, api_url=None):
 
     # Default API endpoint if not provided
     if api_url is None:
@@ -17,8 +17,8 @@ def remove_service_plan_subscription(household_id, service_plan_id, api_url=None
   <soap:Body>
     <removeServicePlanSubscription xmlns="http://CRMAPIWS/xsd">
       <IServicePlanSubscriptionIdentifier>
-        <householdExternalId>{household_id}</householdExternalId>
-        <servicePlanExternalId>{service_plan_id}</servicePlanExternalId>
+        <householdExternalId>{hh_id}</householdExternalId>
+        <servicePlanExternalId>{sp_id}</servicePlanExternalId>
       </IServicePlanSubscriptionIdentifier>
     </removeServicePlanSubscription>
   </soap:Body>
@@ -26,17 +26,17 @@ def remove_service_plan_subscription(household_id, service_plan_id, api_url=None
 
     # Make the request
     try:
-        response = requests.post(api_url, headers=headers, data=body)
+        resp = requests.post(api_url, headers=headers, data=body)
 
         # Print the status code and response
-        print(f"Status Code: {response.status_code}")
-        print("Response:\n", response.text)
+        print(f"Status Code: {resp.status_code}")
+        print("Response:\n", resp.text)
         # Return success status and response
-        return (response.status_code == 200, response.text)
+        return resp.status_code == 200, resp.text
 
     except Exception as e:
         print(f"An error occurred: {e}")
-        return (False, str(e))
+        return False, str(e)
 
 
 if __name__ == "__main__":

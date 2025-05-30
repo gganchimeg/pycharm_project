@@ -4,6 +4,7 @@ from src.pages.credential_related.settings_acc_config import SettingsAccConfigPa
 
 class SettingsProfileConfigPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

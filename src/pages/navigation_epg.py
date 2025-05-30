@@ -3,6 +3,7 @@ from src.pages.contentInfoPage import ContentInfoPage
 
 class GuidePage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

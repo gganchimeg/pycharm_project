@@ -1,5 +1,5 @@
 import pytest
-from selenium import webdriver
+# from selenium import webdriver
 from seleniumwire import webdriver
 
 @pytest.fixture()
@@ -38,3 +38,27 @@ def pytest_collection_modifyitems(items):
 #     driver = webdriver.Chrome()
 #
 #     yield driver
+
+
+import warnings
+
+# Suppress deprecated use of pkg_resources in kaitaistruct
+warnings.filterwarnings(
+    "ignore",
+    message=r"pkg_resources is deprecated.*",
+    category=DeprecationWarning
+)
+
+# Suppress deprecated pyOpenSSL get_extension()
+warnings.filterwarnings(
+    "ignore",
+    message=r"This API is deprecated and will be removed in a future version of pyOpenSSL.*",
+    category=DeprecationWarning
+)
+
+# Suppress X509Extension deprecation
+warnings.filterwarnings(
+    "ignore",
+    message=r"X509Extension support in pyOpenSSL is deprecated.*",
+    category=DeprecationWarning
+)

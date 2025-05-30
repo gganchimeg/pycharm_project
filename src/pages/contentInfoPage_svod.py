@@ -1,7 +1,4 @@
-from seleniumpagefactory.Pagefactory import PageFactory
-
 from src.pages.contentInfoPage import ContentInfoPage
-from src.pages.payment_popup import PaymentPage
 from src.pages.player import VideoPlayer
 
 
@@ -20,7 +17,7 @@ class ContentInfoPageSVOD(ContentInfoPage):
         super().get_button_2().click()
         return VideoPlayer(self.driver)
 
-    def click_watchLater(self):
+    def click_watch_later(self):
         super().get_button_3().click()
 
 

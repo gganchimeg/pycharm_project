@@ -1,6 +1,7 @@
 from seleniumpagefactory.Pagefactory import PageFactory
 class BaseRegistrationPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {
@@ -15,31 +16,31 @@ class BaseRegistrationPage(PageFactory):
         'close': ('XPATH', "//div[@class='tv-icon icon-exit close-login-button cursor-pointer ng-scope']")
     }
 
-    def setEmail(self, email):
+    def set_email(self, email):
         self.email_input.set_text(email)
 
-    def setPhone(self, phone):
+    def set_phone(self, phone):
         self.email_input.set_text(phone)
 
-    def setPassword(self, password):
+    def set_password(self, password):
         self.pass_input.set_text(password)
 
-    def setPassword_duplicate(self, password):
+    def set_password_duplicate(self, password):
         self.pass_input_duplicate.set_text(password)
 
-    def checkShowPassword(self):
+    def check_show_password(self):
         self.pass_show.click()
 
-    def checkShowPassword_duplicate(self):
+    def check_show_password_duplicate(self):
         self.pass_show_duplicate.click()
 
-    def setPrivacyPolicy(self):
+    def set_privacy_policy(self):
         self.policy_check.click()
 
-    def clickSubmitButton(self):
+    def click_submit_button(self):
         self.register_confirm_button.click()
 
-    def closeWindow(self):
+    def click_close_button(self):
         self.close.click()
 
 

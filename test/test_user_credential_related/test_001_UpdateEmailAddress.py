@@ -5,12 +5,12 @@ from utilities.helper_functions import profile_selection_process
 
 
 class TestUpdateEmailAddress:
-    baseURL = ReadConfig.getApplicationURL()
+    baseURL = ReadConfig.get_application_url()
     # logger = LogGen.loggen() # for log
-    username = ReadConfig.getUsernameForLogin()
-    current_password = ReadConfig.getPassword()
-    current_email = ReadConfig.getUseremail()
-    new_email = ReadConfig.getUpdateEmail()
+    username = ReadConfig.get_username_for_login()
+    current_password = ReadConfig.get_password()
+    current_email = ReadConfig.get_user_email()
+    new_email = ReadConfig.get_new_email()
 
     def test_update_email_address(self, setup):
         self.driver = setup  # setup dotroo browseroo zarlaad driver uusgesen

@@ -1,5 +1,5 @@
 from seleniumpagefactory.Pagefactory import PageFactory
-from src.pages.contentInfoPage import ContentInfoPage
+
 from src.pages.contentInfoPage_svod import ContentInfoPageSVOD
 from src.pages.content_info_page_series import ContentInfoPageSeries
 from src.pages.content_info_page_tvod import ContentInfoPageTVOD
@@ -8,6 +8,7 @@ from src.pages.navigation_box import BoxPage
 
 class SearchPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

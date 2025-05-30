@@ -54,11 +54,11 @@ def main(address):
       message = service.users().messages().get(userId='me', id=ids, format='full').execute()
 
       message_body = message['payload']
-      # print("message_body: ", message_body)
+      # print("message_body" , message_body)
 
       if not message_body['body']:
         print("No body found.")
-        return "No body found"
+        return None
 
       body_data = message_body['body']['data']
       # print(body_data)

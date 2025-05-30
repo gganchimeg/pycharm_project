@@ -6,16 +6,16 @@ from utilities.helper_functions import string_to_list, update_config_value, otp_
 
 
 class TestResetPasswordByPhone:
-    baseURL = ReadConfig.getApplicationURL()
-    phone = ReadConfig.getPhoneNumber()
-    current_password = ReadConfig.getPassword()
-    new_password = ReadConfig.getUpdatePassword()
+    baseURL = ReadConfig.get_application_url()
+    phone = ReadConfig.get_phone_number()
+    current_password = ReadConfig.get_password()
+    new_password = ReadConfig.get_update_password()
     def test_reset_password_by_phone(self, setup):
-        '''
+        """
         Completed
         :param setup:
         :return:
-        '''
+        """
         self.driver = setup  # setup dotroo browseroo zarlaad driver uusgesen
         self.driver.get(self.baseURL)
         # self.driver.maximize_window()

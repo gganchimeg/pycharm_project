@@ -10,6 +10,7 @@ from src.pages.settings_profile_config import SettingsProfileConfigPage
 
 class HomePage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

@@ -6,9 +6,9 @@ from utilities.helper_functions import update_config_value, return_activation_li
 
 
 class TestResetPasswordByEmail:
-    baseURL = ReadConfig.getApplicationURL()
-    mail = ReadConfig.getUseremail()
-    current_password = ReadConfig.getPassword()
+    baseURL = ReadConfig.get_application_url()
+    mail = ReadConfig.get_user_email()
+    current_password = ReadConfig.get_password()
     def test_reset_password_by_email(self, setup):
 
         self.driver = setup  # setup dotroo browseroo zarlaad driver uusgesen
@@ -25,7 +25,7 @@ class TestResetPasswordByEmail:
 
 
         # mailruugee nevtreed activation link deer dardag linkruuugee orno
-        activation_link = return_activation_link(ReadConfig.getRegistrationEmail())
+        activation_link = return_activation_link(ReadConfig.get_registration_email())
         new_password = extract_new_password_from_html_page(activation_link)
 
         # open_link(self.driver, activation_link)  # to activate

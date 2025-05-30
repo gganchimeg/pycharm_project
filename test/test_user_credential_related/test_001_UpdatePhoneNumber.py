@@ -5,12 +5,12 @@ from utilities.helper_functions import profile_selection_process
 
 
 class TestUpdatePhoneNumber:
-    baseURL = ReadConfig.getApplicationURL()
+    baseURL = ReadConfig.get_application_url()
     # logger = LogGen.loggen() # for log
-    username = ReadConfig.getUsernameForLogin()
-    current_password = ReadConfig.getPassword()
-    current_phone = ReadConfig.getPhoneNumber()
-    new_phone = ReadConfig.getUpdatePhoneNumber()
+    username = ReadConfig.get_username_for_login()
+    current_password = ReadConfig.get_password()
+    current_phone = ReadConfig.get_phone_number()
+    new_phone = ReadConfig.get_new_phone_number()
 
     def test_update_phone_number(self, setup):
         self.driver = setup  # setup dotroo browseroo zarlaad driver uusgesen

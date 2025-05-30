@@ -1,10 +1,12 @@
 
 from seleniumpagefactory.Pagefactory import PageFactory
-from utilities.readProperties import ReadConfig
+
 from src.pages.payment_options import PaymentOptionsPage
+
 
 class PaymentPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {
@@ -12,6 +14,6 @@ class PaymentPage(PageFactory):
     'close_button': ('XPATH', "//div[@class='tv-icon icon-exit close-payment-option-hover close-payment-button cursor-pointer delete-element-tv ng-scope']")
     }
 
-    def clickRentButton(self):
+    def click_rent_button(self):
         self.rent_button.click()
         return PaymentOptionsPage(self.driver)

@@ -1,15 +1,13 @@
-from src.pages.payment_fourdigit_popup import PaymentPurchasePinInputPage
-import time
+from utilities.helper_functions import profile_selection_process, login_process, update_config_value
 from utilities.readProperties import ReadConfig
-from utilities.helper_functions import login_process, update_config_value
-from utilities.helper_functions import profile_selection_process
+
 
 class TestChangePassword:
-    baseURL = ReadConfig.getApplicationURL()
+    baseURL = ReadConfig.get_application_url()
     # logger = LogGen.loggen() # for log
-    username = ReadConfig.getUsernameForLogin()
-    current_password = ReadConfig.getPassword()
-    new_password = ReadConfig.getUpdatePassword()
+    username = ReadConfig.get_username_for_login()
+    current_password = ReadConfig.get_password()
+    new_password = ReadConfig.get_update_password()
 
     def test_change_password(self, setup):
         self.driver = setup  # setup dotroo browseroo zarlaad driver uusgesen

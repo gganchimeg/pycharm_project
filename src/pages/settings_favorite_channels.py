@@ -3,6 +3,7 @@ from src.pages.navigation_box import BoxPage
 
 class SettingsFavChannelsPage(PageFactory):
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     locators = {

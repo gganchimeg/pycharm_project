@@ -1,6 +1,8 @@
-import requests
-import json
 import re
+
+import requests
+
+
 def delete_household(passw, hh_id, mail=None, phone=None, api_url=None):
 
     # Default API endpoint if not provided
@@ -92,13 +94,13 @@ def delete_household(passw, hh_id, mail=None, phone=None, api_url=None):
         # Print the status code and response
         print(f"Status Code: {response_del.status_code}, {response1.status_code},  {response2.status_code}")
         print(f"Response:\n {response_del.text} \n {response1.text} \n {response2.text}")
-        return (response_del.status_code == 200)
+        return response_del.status_code == 200
 
         # print(response2.status_code)
         # return ("ok", "ok")
     except Exception as e:
         print(f"An error occurred: {e}")
-        return (False, str(e))
+        return False, str(e)
 
 
 if __name__ == "__main__":
